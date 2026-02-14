@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- ===== META ===== -->
+    <meta charset="UTF-8">
+    <title>Academia Juventud Furia Azul</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== FUENTES ===== -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =====================================================
+=                    HEADER / HERO                     =
+===================================================== -->
+<header class="hero">
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+            <!-- SECCIÓN LOGO  -->
+            <div class="brand">
+                <img src="img/logo.png" alt="Juventud Furia Azul" class="brand-logo">
+                <span class="brand-text">Juventud Furia Azul</span>
+            </div>
+
+        <ul class="nav-links">
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#filosofia">Filosofía</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#inscripciones">Inscripciones</a></li>
+            <li><a href="#sucursales">Sucursales</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="https://wa.me/51943193488"  class="btn-nav">Inscríbete ahora</a>
+    </nav>
+
+    <!-- ===== CONTENIDO HERO ===== -->
+    <div class="hero-content">
+
+        <!-- BLOQUE DE TEXTO CON FONDO -->
+        <div class="hero-text-box">
+    
+            <span class="badge">⚽ Temporada 2026 Abierta</span>
+    
+            <h2>
+                Formamos futbolistas,<br>
+                <span>educamos personas</span>
+            </h2>
+    
+            <p>
+                Desarrollo integral para niños y jóvenes a través del fútbol formativo
+            </p>
+    
+            <div class="hero-buttons">
+                <a href="#inscripciones" class="btn-primary">Conocer programas</a>
+                <a href="#sucursales" class="btn-secondary">Ver sedes</a>
+            </div>
+    
+            <div class="hero-stats">
+                <div>
+                    <strong>+200</strong>
+                    <span>Alumnos formados</span>
+                </div>
+                <div>
+                    <strong>2</strong>
+                    <span>Sedes activas</span>
+                </div>
+                <div>
+                    <strong>4.9</strong>
+                    <span>Valoración</span>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+
+<!-- =====================================================
+=                    SOBRE NOSOTROS                    =
+===================================================== -->
+<section id="nosotros" class="section">
+    <div class="nosotros-container">
+        <div class="texto-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Juventud Furia Azul es un equipo con más de 2 años de experiencia, entrenando a categorías sub-7 hasta sub-18, 
+                tanto en niños como en niñas. Nos destacamos por formar jóvenes talentos, fomentando disciplina y trabajo en equipo, 
+                y hemos logrado múltiples campeonatos en torneos federativos.
+            </p>
+            <div class="info-box">
+                <h3>+2 Años de Experiencia</h3>
+                <p>Formando jóvenes talentos con pasión y compromiso en cada entrenamiento.</p>
+            </div>
+        </div>
+        <div class="imagen-nosotros">
+            <img src="img/nosotros.png" alt="Academia Juventud Furia Azul">
+        </div>
+    </div>
+</section>
+<script>
+    const elementos = document.querySelectorAll('.texto-nosotros, .imagen-nosotros');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elementos.forEach(el => observer.observe(el));
+</script>
+
+
+<!-- =====================================================
+=                    FILOSOFÍA                        =
+===================================================== -->
+<section id="filosofia" class="section filosofia">
+    <div class="filosofia-container">
+
+        <h2 class="filosofia-title">Nuestra Filosofía</h2>
+        <p class="filosofia-subtitle">
+            Creemos en el fútbol como una herramienta de formación humana, disciplina y valores.
+        </p>
+
+        <div class="filosofia-grid">
+            <div class="filosofia-card">
+                <span class="icon">⚽</span>
+                <h3>Formación Integral</h3>
+                <p>Desarrollamos al niño como deportista y como persona.</p>
+            </div>
+
+            <div class="filosofia-card">
+                <span class="icon">📘</span>
+                <h3>Educación en Valores</h3>
+                <p>Respeto, responsabilidad y compromiso dentro y fuera del campo.</p>
+            </div>
+
+            <div class="filosofia-card">
+                <span class="icon">🤝</span>
+                <h3>Trabajo en Equipo</h3>
+                <p>Fomentamos la unión, la solidaridad y el compañerismo.</p>
+            </div>
+
+            <div class="filosofia-card">
+                <span class="icon">🔥</span>
+                <h3>Motivación Constante</h3>
+                <p>Impulsamos la confianza y el esfuerzo continuo.</p>
+            </div>
+
+            <div class="filosofia-card">
+                <span class="icon">📊</span>
+                <h3>Desarrollo Técnico</h3>
+                <p>Entrenamientos planificados para crecer técnica y tácticamente.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- =====================================================
+=                 NUESTRO EQUIPO                      =
+===================================================== -->
+<section id="equipo" class="section equipo">
+    <div class="equipo-container">
+
+        <span class="equipo-badge">👥 EQUIPO DE EXPERTOS</span>
+        <h2 class="equipo-title">Equipo Técnico Profesional</h2>
+
+        <div class="equipo-grid">
+
+            <!-- CARD 1 -->
+            <div class="equipo-card">
+                <img src="img/1.png" alt="Jorge Yataco">
+                <div class="equipo-overlay">
+                    <h3>Jorge Yataco</h3>
+                    <span>Director Deportivo</span>
+                    <p>
+                        Planificación general, metodología y supervisión de entrenamientos.
+                        Responsable de la estrategia formativa y desarrollo integral de la academia.
+                    </p>
+                    <div class="equipo-social">
+                        <a href="#">in</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="equipo-card">
+                <img src="img/2.png" alt="Jeferson Yataco">
+                <div class="equipo-overlay">
+                    <h3>Jeferson Yataco</h3>
+                    <span>Entrenador Principal</span>
+                    <p>
+                        Desarrollo técnico y físico de los alumnos en cada etapa formativa.
+                        Especialista en metodología de entrenamiento juvenil.
+                    </p>
+                    <div class="equipo-social">
+                        <a href="#">in</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="equipo-footer">
+            Nuestro equipo cuenta con certificaciones profesionales y amplia experiencia en formación deportiva juvenil.
+        </p>
+
+    </div>
+</section>
+
+<!-- =====================================================
+=                 INSCRIPCIÓN                         =
+===================================================== -->
+<section id="inscripciones" class="section inscripcion">
+
+    <div class="inscripcion-container">
+
+        <h2 class="inscripcion-title">Únete a Nuestra Academia</h2>
+        <p class="inscripcion-subtitle">
+            Proceso simple y rápido para comenzar tu formación deportiva
+        </p>
+
+        <!-- ===== PASOS ===== -->
+        <div class="pasos">
+            <div class="paso">
+                <span class="numero">1</span>
+                <h4>Registro del Alumno</h4>
+                <p>Completa el formulario con los datos del alumno y apoderado</p>
+            </div>
+
+            <div class="paso">
+                <span class="numero">2</span>
+                <h4>Pago de Inscripción</h4>
+                <p>Realiza el pago de inscripción y primera mensualidad</p>
+            </div>
+
+            <div class="paso">
+                <span class="numero">3</span>
+                <h4>Entrega de Uniforme</h4>
+                <p>Recibe el uniforme oficial completo de la academia</p>
+            </div>
+
+            <div class="paso">
+                <span class="numero">4</span>
+                <h4>Inicio de Entrenamientos</h4>
+                <p>Comienza tu formación deportiva con nuestro equipo</p>
+            </div>
+        </div>
+
+        <!-- ===== INVERSIÓN ===== -->
+        <div class="inversion-box">
+
+            <h3>Inversión Formativa</h3>
+
+            <div class="inversion-grid">
+
+                <div class="inversion-card">
+                    <h4>Mensualidad</h4>
+                    <p class="precio">S/. 100.00</p>
+                    <ul>
+                        <li>Entrenamientos semanales</li>
+                        <li>Formación deportiva profesional</li>
+                        <li>Seguimiento personalizado</li>
+                        <li>Participación en torneos</li>
+                    </ul>
+                </div>
+
+                <div class="inversion-card">
+                    <h4>Uniforme Oficial</h4>
+                    <p class="precio">S/. 105.00</p>
+                    <ul>
+                        <li>Camiseta oficial</li>
+                        <li>Short deportivo</li>
+                        <li>Medias de entrenamiento</li>
+                        <li>Chaleco de práctica</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <a href="#contacto" class="btn-inscripcion">
+                INICIAR INSCRIPCIÓN →
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- =====================================================
+=                 NUESTRAS SEDES                      =
+===================================================== -->
+<section id="sucursales" class="section sedes">
+
+    <div class="sedes-container">
+
+        <h2 class="sedes-title">Nuestras Sucursales</h2>
+
+        <div class="sedes-grid">
+
+            <!-- SEDE 1 -->
+            <div class="sede-card">
+                <span class="sede-badge">📍 SEDE ACTIVA</span>
+
+                <img src="img/alfa.jpg" alt="Sucursal Ate">
+
+                <div class="sede-content">
+                    <h3>Sucursal Ate</h3>
+
+                    <p class="direccion">
+                        Campo deportivo Alfa y Omega, Distrito de Ate, Lima
+                    </p>
+
+                    <div class="mapa">
+                        <iframe 
+                            src="https://www.google.com/maps?q=Campo+Deportivo+Alfa+y+Omega+Ate&output=embed"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <div class="horarios">
+                        <p><strong>Horarios de Entrenamiento:</strong></p>
+                        <p>Lunes a Viernes: 4:00 PM - 6:00 PM</p>
+                        <p>Sábados: 9:00 AM - 12:00 PM</p>
+                    </div>
+
+                    <a href="#inscripciones" class="btn-sede">
+                        Inscribirse en esta sede →
+                    </a>
+                </div>
+            </div>
+
+            <!-- SEDE 2 -->
+            <div class="sede-card">
+                <span class="sede-badge">📍 SEDE ACTIVA</span>
+
+                <img src="img/cindy.jpg" alt="Sucursal Cerro Camote">
+
+                <div class="sede-content">
+                    <h3>Sucursal Cerro Camote</h3>
+
+                    <p class="direccion">
+                        Césped sintético Cindy, Calle Cajamarquilla, Los Olivos, Lima
+                    </p>
+
+                    <div class="mapa">
+                        <iframe 
+                            src="https://www.google.com/maps?q=Cesped+Sintetico+Cindy+Cajamarquilla+Los+Olivos&output=embed"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <div class="horarios">
+                        <p><strong>Horarios de Entrenamiento:</strong></p>
+                        <p>Lunes a Viernes: 4:00 PM - 6:00 PM</p>
+                        <p>Sábados: 9:00 AM - 12:00 PM</p>
+                    </div>
+
+                    <a href="#inscripciones" class="btn-sede">
+                        Inscribirse en esta sede →
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- =====================================================
+=                    CONTACTO                         =
+===================================================== -->
+<section id="contacto" class="seccion-contacto-pro">
+    <div class="contacto-grid-container">
+        
+        <div class="columna-info">
+            <h2 class="titulo-contacto">Contáctanos y Resuelve Tus Dudas</h2>
+            <p class="bajada-contacto">Estamos aquí para ayudarte. Comunícate con nosotros y te responderemos a la brevedad.</p>
+
+            <div class="botones-contacto-vertical">
+                <a href="https://wa.me/51943193488" target="_blank" class="card-link whatsapp">
+                    <div class="circulo-icono">
+                        <img src="img/whatsapp-icon.png" alt="Icono">
+                    </div>
+                    <div class="textos-card">
+                        <span>WhatsApp</span>
+                        <strong>+51 943 193 488</strong>
+                    </div>
+                </a>
+
+                <a href="mailto:juventud@gmail.com" class="card-link email">
+                    <div class="circulo-icono">
+                        <img src="img/email-icon.png" alt="Icono">
+                    </div>
+                    <div class="textos-card">
+                        <span>Correo Electrónico</span>
+                        <strong>juventud@gmail.com</strong>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="columna-formulario">
+            <form class="formulario-minimalista">
+                <div class="campo-grupo">
+                    <label>Nombre Completo</label>
+                    <input type="text" placeholder="Ingresa tu nombre" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label>Correo Electrónico</label>
+                    <input type="email" placeholder="tu@email.com" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="+51 999 999 999">
+                </div>
+
+                <div class="campo-grupo">
+                    <label>Sede de Interés</label>
+                    <select required>
+                        <option value="" disabled selected>Selecciona una sede</option>
+                        <option value="ate">Sucursal Ate</option>
+                        <option value="olivos">Sucursal Cerro Camote</option>
+                    </select>
+                </div>
+
+                <div class="campo-grupo">
+                    <label>Mensaje</label>
+                    <textarea placeholder="Cuéntanos sobre tu interés en la academia..."></textarea>
+                    <span class="contador">0 / 500 caracteres</span>
+                </div>
+
+                <button type="submit" class="btn-enviar-moderno">
+                    Enviar mensaje <span>➤</span>
+                </button>
+            </form>
+        </div>
+
+    </div>
+</section>
+<!-- =====================================================
+=                    FOOTER                           =
+===================================================== -->
+<footer class="footer-pro">
+    <div class="footer-container">
+        <div class="footer-column">
+            <div class="brand-footer">
+                <img src="img/logo.png" alt="Logo" class="footer-logo">
+                <span class="brand-text-footer">Juventud Furia Azul</span>
+            </div>
+            <p class="footer-description">Formando los futuros talentos del fútbol peruano con disciplina, valores y pasión.</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Navegación</h3>
+            <ul>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#inscripciones">Inscripciones</a></li>
+                <li><a href="#sucursales">Sedes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Síguenos</h3>
+            <div class="social-links">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">TikTok</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Juventud Furia Azul - Todos los derechos reservados</p>
+        <span class="developer-credit">By Jorge Yataco Torres</span>
+    </div>
+</footer>
+<!-- ===== JS ===== -->
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!--Boton de whatsapp-->
+<a href="https://wa.me/51943193488" 
+   class="whatsapp-flotante" 
+   target="_blank"
+   aria-label="Chatea por WhatsApp">
+  <img src="img/whatsapp.png" alt="WhatsApp">
+</a>
