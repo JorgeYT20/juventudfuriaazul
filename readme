@@ -1,0 +1,36 @@
+# ⚽ Academia Juventud Furia Azul
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
+
+Landing page profesional para la **Academia de Fútbol Juventud Furia Azul**, diseñada para captar nuevos talentos y proporcionar información detallada sobre sedes, inscripciones y filosofía deportiva.
+
+## 🚀 Vista Previa
+Puedes ver el sitio en vivo aquí: [Link a tu proyecto](https://jorgeyt20.github.io/juventudfuriaazul/) *(Asegúrate de activar GitHub Pages)*
+
+---
+
+## ✨ Características principaless
+
+- **Diseño Responsivo:** Adaptado para dispositivos móviles, tablets y computadoras.
+- **Interfaz Moderna:** Secciones de contacto minimalistas y tarjetas de información dinámicas.
+- **Optimización de Conversión:** Botón flotante de WhatsApp para atención directa y formulario de contacto intuitivo.
+- **Efectos de Scroll:** Animaciones suaves mediante `Intersection Observer API`.
+- **Información Detallada:** Gestión de múltiples sedes (Ate y Cerro Camote) con horarios y costos transparentes.
+
+## 🛠️ Tecnologías utilizadas
+
+- **HTML5:** Estructura semántica.
+- **CSS3:** Estilos personalizados, Grid, Flexbox y animaciones.
+- **JavaScript (Vanilla):** Lógica de animaciones y manejo de eventos.
+- **Google Fonts:** Tipografía *Poppins* para una lectura clara.
+
+## 📂 Estructura del Proyecto
+
+```text
+juventudfuriaazul/
+├── img/                # Recursos visuales (Logos, fondos, fotos)
+├── index.html          # Estructura principal
+├── style.css           # Hoja de estilos detallada
+└── script.js           # Animaciones e interactividad
