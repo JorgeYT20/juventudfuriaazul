@@ -11,7 +11,7 @@
 body {
     line-height: 1.6;
     color: #222; /* color base para textos */
-    background: #ffffff;
+    background: linear-gradient(180deg, #f8fafc, #e6edf5);
 }
 
 h1, h2, h3, h4, h5 {
@@ -84,6 +84,42 @@ p, li, span {
     border-radius: 20px;
     text-decoration: none;
     font-weight: 600;
+}
+
+/* Menu */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #0b2c5f;
+        flex-direction: column;
+        width: 250px;
+        padding: 30px;
+        transform: translateX(100%);
+        transition: transform 0.4s ease;
+        border-radius: 0 0 0 20px;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .btn-nav {
+        display: none;
+    }
 }
 
 /* =====================================================
@@ -191,9 +227,18 @@ p, li, span {
 
 /* Sección general */
 .section {
-    padding: 60px 20px;
-    background-color: #f5f7fa;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 100px 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fondo alternado moderno */
+.section:nth-child(even) {
+    background: linear-gradient(135deg, #ffffff, #f1f5f9);
+}
+
+.section:nth-child(odd) {
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
 }
 
 /* Contenedor flex para texto y foto */
@@ -920,8 +965,8 @@ p, li, span {
 .email { background-color: #f0f7ff; }
 
 .circulo-icono {
-    width: 45px;
-    height: 45px;
+    max-width: 45px;
+    max-height: 45px;
     border-radius: 50%;
     margin-right: 15px;
     display: flex;
@@ -1108,30 +1153,70 @@ p, li, span {
 
 
 
-                /* logo Whatsapp flotante */
+/* logo Whatsapp flotante */
+.whatsapp-flotante {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 55px;
+    height: 55px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 50px rgba(45,212,191,0.9);
+    z-index: 1000;
+    transition: transform 0.2s ease;
+}
+                  
+.whatsapp-flotante img {
+    width: 90px;
+    height: 90px;
+}
+                  
+.whatsapp-flotante:hover {
+    transform: scale(1.1);
+}
 
-                .whatsapp-flotante {
-                    position: fixed;
-                    bottom: 40px;
-                    right: 40px;
-                    width: 55px;
-                    height: 55px;
-                    background-color: transparent;
-                    border-radius: 50%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    box-shadow: 0px 0px 50px rgba(45,212,191,0.9);
-                    z-index: 1000;
-                    transition: transform 0.2s ease;
-                  }
-                  
-                  .whatsapp-flotante img {
-                    width: 90px;
-                    height: 90px;
-                  }
-                  
-                  .whatsapp-flotante:hover {
-                    transform: scale(1.1);
-                }
-                  
+.filosofia-card,
+.inversion-card,
+.sede-card {
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.4s ease;
+}
+
+.filosofia-card:hover,
+.inversion-card:hover,
+.sede-card:hover {
+    transform: translateY(-8px);
+}
+
+/*Responsive general*/
+@media (max-width: 768px) {
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-text-box {
+        padding: 25px;
+    }
+
+    .inscripcion-title,
+    .sedes-title,
+    .equipo-title {
+        font-size: 1.8rem;
+    }
+
+    .titulo-contacto {
+        font-size: 2rem;
+    }
+
+}
