@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 body {
@@ -1209,14 +1210,18 @@ p, li, span {
         padding: 25px;
     }
 
-    .inscripcion-title,
-    .sedes-title,
-    .equipo-title {
-        font-size: 1.8rem;
-    }
+.inscripcion-title,
+.sedes-title,
+.equipo-title {
+    font-size: 1.8rem;
+}
 
-    .titulo-contacto {
-        font-size: 2rem;
-    }
+.titulo-contacto {
+    font-size: 2rem;
+}
 
+}
+
+html, body {
+    overflow-x: hidden;
 }
